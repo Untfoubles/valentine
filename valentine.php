@@ -45,7 +45,34 @@
                             <input type="text" name="artist2" placeholder="Enter artist 2" required>
                             <input type="text" name="artist3" placeholder="Enter artist 3" required>
                         </div>
-           
+                        <div class="input-field">
+                      <label>Describe yourself within 3 words</label>
+                      <input  placeholder="Enter word" required>
+                      <input  placeholder="Enter word" required>
+                      <input  placeholder="Enter word" required>
+                  </div>
+ 
+                  <div class="input-field" >
+                      <label>Favorite sports</label>
+                      <input type="text" placeholder="football" required>
+                  </div>
+                 
+ 
+                  <div class="input-field" id="field1" >
+                      <label>Favorite color</label>
+                      <input type="color" required>
+                  </div>
+ 
+                  <div class="input-field">
+                      <label>Favourite love song</label>
+                      <input type="text" placeholder="loveee song" required>
+                  </div>
+ 
+                 
+                      <div class="input-field">
+                          <label>Dream valentine date</label>
+                          <input type="text" placeholder="Enter date" required>
+                      </div>
                         <!-- Add other input fields here -->
 
                         <div class="input-field">
