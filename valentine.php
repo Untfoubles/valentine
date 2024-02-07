@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Animation</title>
 </head>
+
 <body>
     <h2 data-text="&nbsp;𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝐿𝑜𝓋𝑒𝓇𝓈&nbsp;">&nbsp;𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝐿𝑜𝓋𝑒𝓇𝓈&nbsp;</h2>
 
     <script>
-        document.addEventListener('mousemove', function(e){
+        document.addEventListener('mousemove', function (e) {
             let body = document.querySelector('body');
             let heart = document.createElement('heart');
             let x = e.offsetX;
             let y = e.offsetY;
-            heart.style.left = x + 'px';    
+            heart.style.left = x + 'px';
             heart.style.top = y + 'px';
 
             let size = Math.random() * 80;
@@ -23,11 +25,11 @@
             heart.style.height = 10 + size + 'px';
 
             let transformValue = Math.random() * 360;
-            heart.style.transform = 'rotate('+ transformValue +'deg)';
+            heart.style.transform = 'rotate(' + transformValue + 'deg)';
 
             body.appendChild(heart);
 
-            setTimeout(function(){
+            setTimeout(function () {
                 heart.remove();
             }, 1000)
         })
@@ -39,6 +41,12 @@
                 <div class="details personal">
                     <span class="title">Personal Details</span>
                     <div class="fields">
+
+
+                        <div class="input-field">
+                            <label>Name</label>
+                            <input type="name" placeholder="name" required>
+                        </div>
                         <div class="input-field">
                             <label>Your top 3 fav artists</label>
                             <input type="text" name="artist1" placeholder="Enter artist 1" required>
@@ -46,34 +54,33 @@
                             <input type="text" name="artist3" placeholder="Enter artist 3" required>
                         </div>
                         <div class="input-field">
-                      <label>Describe yourself within 3 words</label>
-                      <input  placeholder="Enter word" required>
-                      <input  placeholder="Enter word" required>
-                      <input  placeholder="Enter word" required>
-                  </div>
- 
-                  <div class="input-field" >
-                      <label>Favorite sports</label>
-                      <input type="text" placeholder="football" required>
-                  </div>
-                 
- 
-                  <div class="input-field" id="field1" >
-                      <label>Favorite color</label>
-                      <input type="color" required>
-                  </div>
- 
-                  <div class="input-field">
-                      <label>Favourite love song</label>
-                      <input type="text" placeholder="loveee song" required>
-                  </div>
- 
-                 
-                      <div class="input-field">
-                          <label>Dream valentine date</label>
-                          <input type="text" placeholder="Enter date" required>
-                      </div>
-                        <!-- Add other input fields here -->
+                            <label>Describe yourself within 3 words</label>
+                            <input placeholder="Enter word" required>
+                            <input placeholder="Enter word" required>
+                            <input placeholder="Enter word" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Favorite sports</label>
+                            <input type="text" placeholder="football" required>
+                        </div>
+
+
+                        <div class="input-field" id="field1">
+                            <label>Favorite color</label>
+                            <input type="color" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Favourite love song</label>
+                            <input type="text" placeholder="loveee song" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Dream valentine date</label>
+                            <input type="text" placeholder="Enter date" required>
+                        </div>
 
                         <div class="input-field">
                             <button type="submit" name="submit">Submit</button>
@@ -111,4 +118,5 @@
     }
     ?>
 </body>
+
 </html>
